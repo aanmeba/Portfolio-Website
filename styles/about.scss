@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'settings';
 @import 'navbar';
+@import 'footer';
 
 .about-content {
   font-family: $font-text;
@@ -15,5 +16,13 @@
   }
   .line-through {
     text-decoration: line-through;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .about-content {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
   }
 }
