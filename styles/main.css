@@ -270,6 +270,7 @@ header .navbar ul li a {
 .main-section {
   margin: 150px auto 2rem;
   width: 80vw;
+  text-align: justify;
 }
 
 .main-section .page-title {
@@ -278,6 +279,25 @@ header .navbar ul li a {
   font-weight: 800;
   line-height: calc(2rem + 1.8vw);
   color: #ff8b00;
+}
+
+.about-content {
+  font-family: "Noto Sans", sans-serif;
+  color: #2b3073;
+  font-size: 1rem;
+}
+
+.about-content p {
+  margin: 1rem 0;
+}
+
+.about-content .text-point {
+  color: #00e75e;
+  font-weight: bold;
+}
+
+.about-content .line-through {
+  text-decoration: line-through;
 }
 
 * {
@@ -393,6 +413,7 @@ header .navbar ul li a {
 .main-section {
   margin: 150px auto 2rem;
   width: 80vw;
+  text-align: justify;
 }
 
 .main-section .page-title {

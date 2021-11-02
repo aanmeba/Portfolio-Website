@@ -34,14 +34,43 @@ header .header-title {
   text-transform: uppercase;
   font-weight: 800;
   line-height: calc(2rem + 1.8vw);
-  font-size: 1.5rem;
   padding: 1rem;
   margin-top: 1rem;
 }
 
 header .header-title a {
   text-decoration: none;
-  color: #00e75e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-title a .header-title-1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #2b3073;
+  font-size: 0.8rem;
+  line-height: 10px;
+  padding-right: 3px;
+}
+
+header .header-title a .header-title-2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #fd025e;
+  font-size: 1.4rem;
+  padding-left: 3px;
 }
 
 header .navbar {
@@ -82,6 +111,7 @@ header .navbar ul li a {
 .main-section {
   margin: 150px auto 2rem;
   width: 80vw;
+  text-align: justify;
 }
 
 .main-section .page-title {
@@ -90,5 +120,24 @@ header .navbar ul li a {
   font-weight: 800;
   line-height: calc(2rem + 1.8vw);
   color: #ff8b00;
+}
+
+.about-content {
+  font-family: "Noto Sans", sans-serif;
+  color: #2b3073;
+  font-size: 1rem;
+}
+
+.about-content p {
+  margin: 1rem 0;
+}
+
+.about-content .text-point {
+  color: #00e75e;
+  font-weight: bold;
+}
+
+.about-content .line-through {
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=about.css.map */

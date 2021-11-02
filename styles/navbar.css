@@ -106,6 +106,7 @@ header .navbar ul li a {
 .main-section {
   margin: 150px auto 2rem;
   width: 80vw;
+  text-align: justify;
 }
 
 .main-section .page-title {

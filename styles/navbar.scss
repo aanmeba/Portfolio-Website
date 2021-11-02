@@ -69,6 +69,7 @@ header {
 .main-section {
   margin: 150px auto 2rem;
   width: 80vw;
+  text-align: justify;
 
   .page-title {
     @include bold-text;
