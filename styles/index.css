@@ -18,8 +18,8 @@ body {
   margin: 10vh auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (3)[1fr], 0.5fr;
-      grid-template-columns: repeat(1fr, 3), 0.5fr;
+  -ms-grid-columns: (1fr)[3], 0.5fr;
+      grid-template-columns: repeat(3, 1fr), 0.5fr;
   -ms-grid-rows: 1fr 1fr 0.5fr 1fr;
       grid-template-rows: 1fr 1fr 0.5fr 1fr;
       grid-template-areas: 'title title title title' '. . . vertical' 'footer footer . vertical' 'navbar navbar . vertical';
