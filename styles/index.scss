@@ -3,6 +3,21 @@
 
 body {
   background-color: $bg-color;
+
+  // background-color: $bg-color;
+  background-image: linear-gradient(315deg, $bg-color 0%, #f6f0ea 74%);
+
+  // yellowish
+  // background-color: #f1dfd1;
+  // background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+
+  // lightpink - lightyellow
+  // background-color: #f6ecc4;
+  // background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+
+  // cold gray
+  // background-color: #f6f6f6;
+  // background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
 }
 
 .container {

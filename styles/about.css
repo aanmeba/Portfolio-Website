@@ -91,7 +91,7 @@ header .navbar ul {
 
 header .navbar ul li {
   display: inline-block;
-  border-right: 0.2rem solid #fd025e;
+  border-right: 0.2rem solid #00e75e;
 }
 
 header .navbar ul li:nth-child(4) {
@@ -119,7 +119,7 @@ header .navbar ul li a {
   text-transform: uppercase;
   font-weight: 800;
   line-height: calc(2rem + 1.8vw);
-  color: #ff8b00;
+  color: #00e75e;
 }
 
 .about-content {
@@ -133,7 +133,7 @@ header .navbar ul li a {
 }
 
 .about-content .text-point {
-  color: #00e75e;
+  color: #fd025e;
   font-weight: bold;
 }
 

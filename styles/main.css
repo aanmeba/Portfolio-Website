@@ -3,8 +3,13 @@
   padding: 0;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background-color: #f5f2e3;
+  background-image: linear-gradient(315deg, #f5f2e3 0%, #f6f0ea 74%);
 }
 
 .container {
@@ -162,9 +167,17 @@ body {
   padding: 0;
 }
 
+html {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  height: 100vh;
 }
 
 header {
@@ -299,7 +312,7 @@ header .navbar ul li a:active {
 }
 
 .about-content .text-point {
-  color: #00e75e;
+  color: #fd025e;
   font-weight: bold;
 }
 
@@ -312,9 +325,17 @@ header .navbar ul li a:active {
   padding: 0;
 }
 
+html {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  height: 100vh;
 }
 
 header {
