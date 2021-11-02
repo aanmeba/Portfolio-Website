@@ -50,7 +50,7 @@ header {
       flex-wrap: wrap;
       li {
         display: inline-block;
-        border-right: 0.2rem solid $point-pink;
+        border-right: 0.2rem solid $point-green;
         // remove the last border-right
         &:nth-child(4) {
           border-right: none;
@@ -60,6 +60,12 @@ header {
           @include heading;
           text-decoration: none;
           padding: 0.5rem;
+        }
+
+        a:hover,
+        a:active {
+          border-top: 3px solid $point-pink;
+          border-bottom: 3px solid $point-pink;
         }
       }
     }
@@ -73,6 +79,7 @@ header {
 
   .page-title {
     @include bold-text;
-    color: $point-orange;
+    color: $point-green;
+    text-align: center;
   }
 }
