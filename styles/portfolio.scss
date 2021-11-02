@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'settings';
+@import 'navbar';
+@import 'footer';
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+
+  .project-box {
+    width: 90vw;
+    height: 35vh;
+
+    padding: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .project-box__link {
+      align-self: flex-end;
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      i {
+        font-size: 1.1rem;
+        padding: 0.2rem;
+      }
+    }
+    .project-box__content {
+      color: $text-navy;
+      text-align: left;
+      width: 40vw;
+
+      .project-heading {
+        font-family: $font-bold;
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+
+      .project-tech {
+        font-family: $font-text;
+        // height: 10vh;
+      }
+    }
+  }
+  .project-box:first-child {
+    background: linear-gradient(180deg, #f3cbab, #feedca);
+  }
+  .project-box:nth-child(2) {
+    background: linear-gradient(180deg, #b1e5f9, #f4d2fe);
+  }
+  .project-box:nth-child(3) {
+    background: linear-gradient(180deg, #dbb4f3, #efb7d7);
+  }
+  .project-box:nth-child(4) {
+    background: linear-gradient(180deg, #efa971, #e4cafe);
+  }
+  .project-box:nth-child(5) {
+    background: linear-gradient(180deg, #b1e5f9, #f4d2fe);
+  }
+}
+
+figure {
+  margin: 0 auto;
+  text-align: center;
+  img {
+    width: 300px;
+    height: auto;
+  }
+
+  figcaption {
+    font-family: $font-text;
+  }
+}

@@ -27,6 +27,7 @@ header {
   opacity: 0.8;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 header .header-title {
@@ -127,5 +128,6 @@ header .navbar ul li a:active {
   line-height: calc(2rem + 1.8vw);
   color: #00e75e;
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 /*# sourceMappingURL=navbar.css.map */
