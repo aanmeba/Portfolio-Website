@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'settings';
+
+header {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+  position: fixed;
+  top: 0;
+
+  .header-title {
+    @include bold-text;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    a {
+      text-decoration: none;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .header-title-1 {
+        align-self: center;
+        color: $text-navy;
+        font-size: 0.8rem;
+        line-height: 10px;
+        padding-right: 3px;
+      }
+      .header-title-2 {
+        align-self: flex-start;
+        color: $point-pink;
+        font-size: 1.4rem;
+        padding-left: 3px;
+      }
+    }
+  }
+
+  .navbar {
+    width: 100vw;
+    margin-bottom: 1rem;
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        display: inline-block;
+        border-right: 0.2rem solid $point-pink;
+        // remove the last border-right
+        &:nth-child(4) {
+          border-right: none;
+        }
+
+        a {
+          @include heading;
+          text-decoration: none;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.main-section {
+  margin: 150px auto 2rem;
+  width: 80vw;
+
+  .page-title {
+    @include bold-text;
+    color: $point-orange;
+  }
+}

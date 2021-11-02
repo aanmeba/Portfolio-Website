@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f2e3;
+  position: fixed;
+  top: 0;
+}
+
+header .header-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+header .header-title a {
+  text-decoration: none;
+  color: #00e75e;
+}
+
+header .navbar {
+  width: 100vw;
+  margin-bottom: 1rem;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  border-right: 0.2rem solid #fd025e;
+}
+
+header .navbar ul li:nth-child(4) {
+  border-right: none;
+}
+
+header .navbar ul li a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #2b3073;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.main-section {
+  margin: 150px auto 2rem;
+  width: 80vw;
+}
+
+.main-section .page-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  color: #ff8b00;
+}
+/*# sourceMappingURL=about.css.map */

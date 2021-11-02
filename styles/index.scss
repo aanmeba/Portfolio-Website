@@ -1,0 +1,119 @@
+@import 'variables';
+@import 'settings';
+
+body {
+  background-color: $bg-color;
+}
+
+.container {
+  width: 70vw;
+  height: 77vh;
+  margin: 10vh auto;
+  display: grid;
+  grid-template-columns: repeat(1fr, 3), 0.5fr;
+  grid-template-rows: 1fr 1fr 0.5fr 1fr;
+  grid-template-areas:
+    'title title title title'
+    '. . . vertical'
+    'footer footer . vertical'
+    'navbar navbar . vertical';
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.title-main {
+  @include bold-text;
+  text-align: end;
+  grid-area: title;
+  align-self: flex-end;
+  color: $text-navy;
+
+  // apply responsibe font-size
+  // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+  font-size: calc(1.2rem + 0.5vw);
+}
+
+.title-vertical {
+  @include bold-text;
+  writing-mode: vertical-rl;
+  grid-area: vertical;
+  color: $point-pink;
+  font-size: calc(1.5rem + 1vw);
+}
+
+.side-text {
+  visibility: hidden;
+}
+
+.navigation {
+  grid-area: navbar;
+  margin-top: 1rem;
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    li {
+      display: inline-block;
+      width: 100%;
+      border-bottom: 5px solid $text-navy;
+      padding: 2px 0;
+      margin: 2px 0;
+      a {
+        @include heading;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer {
+  grid-area: footer;
+  align-self: flex-end;
+  font-size: 0.7rem;
+  border-bottom: 10px solid $point-pink;
+  font-family: $font-text;
+  color: $text-navy;
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    width: 500px;
+    height: 65vh;
+    grid-template-rows: 1fr 0.5fr 0.5fr 2fr 1fr;
+    grid-template-areas:
+      'title title . .'
+      '. vertical . .'
+      '. vertical side .'
+      '. vertical . .'
+      'navbar footer footer footer';
+  }
+
+  .title-vertical {
+    @include bold-text;
+    writing-mode: vertical-rl;
+    grid-area: vertical;
+    color: $point-pink;
+    font-size: calc(1.7rem + 0.5vw);
+  }
+
+  .side-text {
+    visibility: visible;
+
+    @include heading;
+
+    grid-area: side;
+    border-bottom: 5px solid $text-navy;
+    border-top: 5px solid $text-navy;
+  }
+
+  .footer {
+    border-bottom: 1rem solid $point-pink;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    transform: rotate(315deg);
+  }
+}

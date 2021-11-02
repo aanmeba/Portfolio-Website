@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f2e3;
+}
+
+.container {
+  width: 70vw;
+  height: 77vh;
+  margin: 10vh auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3)[1fr], 0.5fr;
+      grid-template-columns: repeat(1fr, 3), 0.5fr;
+  -ms-grid-rows: 1fr 1fr 0.5fr 1fr;
+      grid-template-rows: 1fr 1fr 0.5fr 1fr;
+      grid-template-areas: 'title title title title' '. . . vertical' 'footer footer . vertical' 'navbar navbar . vertical';
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+.title-main {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  text-align: end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: title;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #2b3073;
+  font-size: calc(1.2rem + 0.5vw);
+}
+
+.title-vertical {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: vertical;
+  color: #fd025e;
+  font-size: calc(1.5rem + 1vw);
+}
+
+.side-text {
+  visibility: hidden;
+}
+
+.navigation {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: navbar;
+  margin-top: 1rem;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation ul li {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 5px solid #2b3073;
+  padding: 2px 0;
+  margin: 2px 0;
+}
+
+.navigation ul li a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #2b3073;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 0.7rem;
+  border-bottom: 10px solid #fd025e;
+  font-family: "Noto Sans", sans-serif;
+  color: #2b3073;
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    width: 500px;
+    height: 65vh;
+    -ms-grid-rows: 1fr 0.5fr 0.5fr 2fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 2fr 1fr;
+        grid-template-areas: 'title title . .' '. vertical . .' '. vertical side .' '. vertical . .' 'navbar footer footer footer';
+  }
+  .title-vertical {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: calc(2rem + 1.8vw);
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    grid-area: vertical;
+    color: #fd025e;
+    font-size: calc(1.7rem + 0.5vw);
+  }
+  .side-text {
+    visibility: visible;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    color: #2b3073;
+    font-weight: 600;
+    font-size: 1rem;
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: side;
+    border-bottom: 5px solid #2b3073;
+    border-top: 5px solid #2b3073;
+  }
+  .footer {
+    border-bottom: 1rem solid #fd025e;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f2e3;
+  position: fixed;
+  top: 0;
+}
+
+header .header-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+header .header-title a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-title a .header-title-1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #2b3073;
+  font-size: 0.8rem;
+  line-height: 10px;
+  padding-right: 3px;
+}
+
+header .header-title a .header-title-2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #fd025e;
+  font-size: 1.4rem;
+  padding-left: 3px;
+}
+
+header .navbar {
+  width: 100vw;
+  margin-bottom: 1rem;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  border-right: 0.2rem solid #fd025e;
+}
+
+header .navbar ul li:nth-child(4) {
+  border-right: none;
+}
+
+header .navbar ul li a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #2b3073;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.main-section {
+  margin: 150px auto 2rem;
+  width: 80vw;
+}
+
+.main-section .page-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  color: #ff8b00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f2e3;
+  position: fixed;
+  top: 0;
+}
+
+header .header-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+header .header-title a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-title a .header-title-1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #2b3073;
+  font-size: 0.8rem;
+  line-height: 10px;
+  padding-right: 3px;
+}
+
+header .header-title a .header-title-2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #fd025e;
+  font-size: 1.4rem;
+  padding-left: 3px;
+}
+
+header .navbar {
+  width: 100vw;
+  margin-bottom: 1rem;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  border-right: 0.2rem solid #fd025e;
+}
+
+header .navbar ul li:nth-child(4) {
+  border-right: none;
+}
+
+header .navbar ul li a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #2b3073;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.main-section {
+  margin: 150px auto 2rem;
+  width: 80vw;
+}
+
+.main-section .page-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  color: #ff8b00;
+}
+/*# sourceMappingURL=main.css.map */

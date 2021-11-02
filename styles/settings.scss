@@ -1,0 +1,22 @@
+@import 'variables';
+
+@mixin bold-text {
+  font-family: $font-bold;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+}
+
+@mixin heading {
+  font-family: $font-title;
+  text-transform: uppercase;
+  color: $text-navy;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+// remove all the default margin and padding on each element
+* {
+  margin: 0;
+  padding: 0;
+}
