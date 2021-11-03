@@ -8,7 +8,8 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // minmax(250px, 1fr) is the best fit to the mobile, expecially iphone 5/se
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto;
   gap: 3rem 1.5rem;
   // make the box fit to the grid templates
@@ -17,9 +18,9 @@
   .project-box {
     width: 90%;
     height: 35vh;
+    // don't forget to add box-sizing: border-box!!!! (in most cases)
     box-sizing: border-box;
     padding: 0.8rem 0.8rem 2rem 2rem;
-    border: 7px solid $point-green;
 
     display: flex;
     flex-direction: column;
@@ -55,21 +56,21 @@
         padding: 1rem 0 0;
       }
     }
+    // apply three different colors in a row
+    &:nth-child(3n + 1) {
+      background-color: $point-green;
+    }
+    &:nth-child(3n + 2) {
+      background-color: $point-orange;
+    }
+    &:nth-child(3n) {
+      background-color: $point-pink;
+    }
   }
+}
 
-  .project-box:nth-child(1) {
-    background-color: $point-orange;
-  }
-  .project-box:nth-child(2) {
-    background-color: $point-green;
-  }
-  .project-box:nth-child(3n) {
-    background-color: $point-pink;
-  }
-  .project-box:nth-child(3n + 1) {
-    background-color: $point-orange;
-  }
-  .project-box:nth-child(3n + 2) {
-    background-color: $point-green;
+@media screen and (min-width: 1500px) {
+  .project-container {
+    width: 1200px;
   }
 }
