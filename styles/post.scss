@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'settings';
+@import 'navbar';
+@import 'footer';
+
+.post-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@mixin blogText {
+  color: $text-navy;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+.post-title {
+  h1 {
+    font-family: $font-bold;
+    font-size: 1.7rem;
+    @include blogText;
+  }
+}
+
+figure {
+  padding-bottom: 1.5rem;
+  img {
+    width: 100%;
+  }
+  figcaption {
+    text-align: center;
+    font-family: $font-text;
+    font-size: 0.8rem;
+  }
+}
+
+.post-main {
+  .post-headings {
+    font-family: $font-title;
+    font-size: 1.2rem;
+    @include blogText;
+  }
+
+  p {
+    font-family: $font-text;
+    font-size: 1rem;
+    @include blogText;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .post-title {
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .post-container {
+    width: 700px;
+  }
+  .post-title {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}

@@ -1036,8 +1036,8 @@ footer ul li {
 }
 
 @media screen and (min-width: 551px) {
-  .blog-container .blog-box a .blog-title {
-    font-size: 1.2rem;
+  .blog-container .blog-box .blog-box__link .blog-title {
+    font-size: 1.3rem;
   }
   .blog-container .blog-box .post-img {
     width: 150px;
@@ -1048,8 +1048,8 @@ footer ul li {
 }
 
 @media screen and (min-width: 735px) {
-  .blog-container .blog-box a .blog-title {
-    font-size: 1.5rem;
+  .blog-container .blog-box .blog-box__link .blog-title {
+    font-size: 1.6rem;
   }
   .blog-container .blog-box .post-img {
     width: 200px;
@@ -1062,6 +1062,238 @@ footer ul li {
 @media screen and (min-width: 1000px) {
   .blog-container {
     width: 800px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f0ea;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+header .header-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+header .header-title a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-title a .header-title-1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #2b3073;
+  font-size: 0.8rem;
+  line-height: 10px;
+  padding-right: 3px;
+}
+
+header .header-title a .header-title-2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #fd025e;
+  font-size: 1.4rem;
+  padding-left: 3px;
+}
+
+header .navbar {
+  width: 100vw;
+  margin-bottom: 1rem;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  border-right: 0.2rem solid #00e75e;
+}
+
+header .navbar ul li:nth-child(4) {
+  border-right: none;
+}
+
+header .navbar ul li a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #2b3073;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+header .navbar ul li a:hover,
+header .navbar ul li a:active {
+  border-top: 3px solid #fd025e;
+  border-bottom: 3px solid #fd025e;
+}
+
+.main-section {
+  margin: 150px 0 2rem;
+  width: 100%;
+  text-align: justify;
+}
+
+.main-section .page-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: calc(2rem + 1.8vw);
+  color: #00e75e;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+body {
+  margin-bottom: 3rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+.social {
+  padding: 0.5rem;
+}
+
+.social .fab {
+  font-size: 1.2rem;
+  color: #00e75e;
+}
+
+.post-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.post-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+figure {
+  padding-bottom: 1.5rem;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure figcaption {
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+.post-main .post-headings {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+.post-main p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+@media screen and (min-width: 601px) {
+  .post-title h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .post-container {
+    width: 700px;
+  }
+  .post-title h1 {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -60,9 +60,9 @@
 @media screen and (min-width: 551px) {
   .blog-container {
     .blog-box {
-      a {
+      .blog-box__link {
         .blog-title {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
         }
       }
       .post-img {
@@ -77,9 +77,9 @@
 @media screen and (min-width: 735px) {
   .blog-container {
     .blog-box {
-      a {
+      .blog-box__link {
         .blog-title {
-          font-size: 1.5rem;
+          font-size: 1.6rem;
         }
       }
       .post-img {

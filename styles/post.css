@@ -169,100 +169,64 @@ footer ul li {
   color: #00e75e;
 }
 
-.blog-container {
+.post-container {
   width: 80vw;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[250px];
-      grid-template-columns: repeat(250px, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  gap: 1.5rem;
-  justify-items: center;
 }
 
-.blog-container .blog-box {
-  width: 100%;
-  height: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.blog-container .blog-box .blog-box__link {
-  text-decoration: none;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.blog-container .blog-box .blog-box__link .blog-title {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
-  padding-right: 0.5rem;
+.post-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
   color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
   text-align: left;
 }
 
-.blog-container .blog-box .post-img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+figure {
+  padding-bottom: 1.5rem;
 }
 
-.blog-container hr {
-  border: 1px solid #ff8b00;
+figure img {
   width: 100%;
 }
 
-@media screen and (min-width: 551px) {
-  .blog-container .blog-box .blog-box__link .blog-title {
-    font-size: 1.3rem;
-  }
-  .blog-container .blog-box .post-img {
-    width: 150px;
-    height: 100px;
-    -o-object-fit: cover;
-       object-fit: cover;
+figure figcaption {
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+.post-main .post-headings {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+.post-main p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  color: #2b3073;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+@media screen and (min-width: 601px) {
+  .post-title h1 {
+    font-size: 2.4rem;
   }
 }
 
-@media screen and (min-width: 735px) {
-  .blog-container .blog-box .blog-box__link .blog-title {
-    font-size: 1.6rem;
+@media screen and (min-width: 801px) {
+  .post-container {
+    width: 700px;
   }
-  .blog-container .blog-box .post-img {
-    width: 200px;
-    height: 135px;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .post-title h1 {
+    font-size: 3rem;
   }
 }
-
-@media screen and (min-width: 1000px) {
-  .blog-container {
-    width: 800px;
-  }
-}
-/*# sourceMappingURL=blog.css.map */
+/*# sourceMappingURL=post.css.map */
