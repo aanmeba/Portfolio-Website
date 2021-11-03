@@ -52,11 +52,11 @@
 
       .project-tech {
         font-family: $font-text;
-        // height: 10vh;
         padding: 1rem 0 0;
       }
     }
   }
+
   .project-box:nth-child(1) {
     background-color: $point-orange;
   }
@@ -71,21 +71,5 @@
   }
   .project-box:nth-child(3n + 2) {
     background-color: $point-green;
-  }
-  // .project-box:nth-child(6) {
-  //   background-color: $point-pink;
-  // }
-}
-
-figure {
-  margin: 0 auto;
-  text-align: center;
-  img {
-    width: 300px;
-    height: auto;
-  }
-
-  figcaption {
-    font-family: $font-text;
   }
 }
