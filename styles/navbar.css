@@ -61,8 +61,8 @@ header .header-title a .header-title-1 {
       -ms-grid-row-align: center;
       align-self: center;
   color: #2b3073;
-  font-size: 0.8rem;
-  line-height: 10px;
+  font-size: 0.9rem;
+  line-height: 11px;
   padding-right: 3px;
 }
 
@@ -70,7 +70,7 @@ header .header-title a .header-title-2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   color: #fd025e;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding-left: 3px;
 }
 
