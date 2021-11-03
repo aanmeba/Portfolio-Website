@@ -10,6 +10,7 @@
   font-family: $font-text;
   color: $text-navy;
   font-size: 1rem;
+  text-align: left;
   p {
     margin: 1rem 0;
   }
@@ -19,6 +20,82 @@
   }
   .line-through {
     text-decoration: line-through;
+  }
+  .big {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    // }
+  }
+}
+
+.contact-form {
+  width: 100%;
+
+  hr {
+    width: 40%;
+    border: 0.6px solid $text-navy;
+    margin: 1rem 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      // font-family: $font-text;
+      font-family: $font-bold;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $text-navy;
+      font-size: 0.8rem;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      padding: 0.2rem;
+      box-sizing: border-box;
+      border: 1px solid $text-navy;
+      border-radius: 2px;
+      margin: 0.2rem 0 0.5rem;
+      resize: vertical;
+    }
+
+    input[type='submit'] {
+      width: 70px;
+      height: 30px;
+      border-radius: 2px;
+      border: 1px solid $text-navy;
+      background-color: transparent;
+      color: $text-navy;
+      font-family: $font-bold;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      &:hover,
+      &:active {
+        border: none;
+        background-color: $point-green;
+      }
+    }
+  }
+}
+
+// set the maximum width of the <hr>, <input>, and <textarea>
+@media screen and (min-width: 451px) {
+  .contact-form {
+    hr {
+      width: 180px;
+    }
+
+    form {
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        width: 360px;
+      }
+    }
   }
 }
 

@@ -54,7 +54,7 @@ header {
         display: inline-block;
         border-right: 0.2rem solid $point-green;
         // remove the last border-right
-        &:nth-child(4) {
+        &:nth-child(3) {
           border-right: none;
         }
 
@@ -66,7 +66,6 @@ header {
 
         a:hover,
         a:active {
-          border-top: 3px solid $point-pink;
           border-bottom: 3px solid $point-pink;
         }
       }

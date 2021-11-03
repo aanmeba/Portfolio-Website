@@ -95,7 +95,7 @@ header .navbar ul li {
   border-right: 0.2rem solid #00e75e;
 }
 
-header .navbar ul li:nth-child(4) {
+header .navbar ul li:nth-child(3) {
   border-right: none;
 }
 
@@ -111,7 +111,6 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover,
 header .navbar ul li a:active {
-  border-top: 3px solid #fd025e;
   border-bottom: 3px solid #fd025e;
 }
 

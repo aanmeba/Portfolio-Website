@@ -1,8 +1,8 @@
 body {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
-footer ul {
+#footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,9 +12,10 @@ footer ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem 0;
 }
 
-footer ul li {
+#footer ul li {
   list-style-type: none;
 }
 

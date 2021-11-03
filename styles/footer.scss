@@ -1,16 +1,19 @@
 @import 'variables';
 
 body {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
-footer ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#footer {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 
-  li {
-    list-style-type: none;
+    li {
+      list-style-type: none;
+    }
   }
 }
 
