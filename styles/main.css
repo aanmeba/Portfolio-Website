@@ -1318,6 +1318,13 @@ body {
   margin: 0 auto;
 }
 
+.post-title p {
+  padding-top: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #72737e;
+  font-size: 0.9rem;
+}
+
 .post-title h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1.7rem;

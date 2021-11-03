@@ -70,8 +70,8 @@ header .header-title a .header-title-1 {
       -ms-grid-row-align: center;
       align-self: center;
   color: #2b3073;
-  font-size: 0.8rem;
-  line-height: 10px;
+  font-size: 0.9rem;
+  line-height: 11px;
   padding-right: 3px;
 }
 
@@ -79,7 +79,7 @@ header .header-title a .header-title-2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   color: #fd025e;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding-left: 3px;
 }
 
@@ -104,7 +104,7 @@ header .navbar ul li {
   border-right: 0.2rem solid #00e75e;
 }
 
-header .navbar ul li:nth-child(4) {
+header .navbar ul li:nth-child(3) {
   border-right: none;
 }
 
@@ -120,7 +120,6 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover,
 header .navbar ul li a:active {
-  border-top: 3px solid #fd025e;
   border-bottom: 3px solid #fd025e;
 }
 
@@ -141,10 +140,10 @@ header .navbar ul li a:active {
 }
 
 body {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
-footer ul {
+#footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,9 +153,10 @@ footer ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem 0;
 }
 
-footer ul li {
+#footer ul li {
   list-style-type: none;
 }
 
@@ -172,6 +172,13 @@ footer ul li {
 .post-container {
   width: 80vw;
   margin: 0 auto;
+}
+
+.post-title p {
+  padding-top: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #72737e;
+  font-size: 0.9rem;
 }
 
 .post-title h1 {
