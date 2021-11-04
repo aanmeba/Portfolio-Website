@@ -331,36 +331,6 @@ header .header-title:active .header-title-1 {
   }
 }
 
-@-webkit-keyframes scaleTitle {
-  25% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-
-@keyframes scaleTitle {
-  25% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-
 header .navbar {
   width: 100vw;
   margin-bottom: 1rem;
@@ -461,6 +431,10 @@ body {
   margin: 1rem 0;
 }
 
+.about-content p:nth-child(3) {
+  display: none;
+}
+
 .about-content .text-point {
   color: #fd025e;
   font-weight: bold;
@@ -474,6 +448,81 @@ body {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+.tech-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tech-skills p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.tech-skills .as-is {
+  padding-left: 1rem;
+}
+
+.tech-skills .as-is ul {
+  padding-left: 1rem;
+}
+
+.tech-skills .as-is ul li {
+  padding-left: 0.5rem;
+}
+
+.tech-skills .as-is ul li:nth-child(n) {
+  list-style-type: '\1F33F';
+}
+
+.tech-skills .as-is ul li:nth-child(n + 3) {
+  list-style-type: '\1F331';
+}
+
+.tech-skills .to-be {
+  padding-left: 1rem;
+}
+
+.tech-skills .to-be ul {
+  padding-left: 1rem;
+}
+
+.tech-skills .to-be ul li {
+  padding-left: 0.5rem;
+}
+
+.tech-skills .to-be ul li:nth-child(1) {
+  list-style-type: '\1F349';
+}
+
+.tech-skills .to-be ul li:nth-child(2) {
+  list-style-type: '\1F348';
+}
+
+.tech-skills .to-be ul li:nth-child(3) {
+  list-style-type: '\1F34E';
+}
+
+.tech-skills .to-be ul li:nth-child(4) {
+  list-style-type: '\1F34C';
+}
+
+.tech-skills .to-be ul li:nth-child(5) {
+  list-style-type: '\1F353';
+}
+
+.tech-skills .to-be ul li:nth-child(6) {
+  list-style-type: '\1F34A';
+}
+
+.tech-skills .to-be ul li:nth-child(7) {
+  list-style-type: '\1F352';
 }
 
 /*** contact component */
@@ -535,6 +584,16 @@ body {
 }
 
 @media screen and (min-width: 451px) {
+  .tech-skills {
+    width: 350px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .contact-form hr {
     width: 180px;
   }
@@ -550,6 +609,9 @@ body {
     width: 700px;
     height: auto;
     margin: 0 auto;
+  }
+  .about-content p:nth-child(3) {
+    display: unset;
   }
 }
 
@@ -670,21 +732,6 @@ header .header-title:active .header-title-1 {
   100% {
     -webkit-transform: rotate(-1deg);
             transform: rotate(-1deg);
-  }
-}
-
-@keyframes scaleTitle {
-  25% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
 }
 
@@ -892,21 +939,6 @@ header .header-title:active .header-title-1 {
   100% {
     -webkit-transform: rotate(-1deg);
             transform: rotate(-1deg);
-  }
-}
-
-@keyframes scaleTitle {
-  25% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
 }
 
@@ -1205,21 +1237,6 @@ header .header-title:active .header-title-1 {
   100% {
     -webkit-transform: rotate(-1deg);
             transform: rotate(-1deg);
-  }
-}
-
-@keyframes scaleTitle {
-  25% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
 }
 
@@ -1543,21 +1560,6 @@ header .header-title:active .header-title-1 {
   100% {
     -webkit-transform: rotate(-1deg);
             transform: rotate(-1deg);
-  }
-}
-
-@keyframes scaleTitle {
-  25% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
 }
 

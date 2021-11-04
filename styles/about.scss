@@ -13,6 +13,11 @@
   text-align: left;
   p {
     margin: 1rem 0;
+
+    // hide a paragraph including additional content in mobile view
+    &:nth-child(3) {
+      display: none;
+    }
   }
   .text-point {
     color: $point-pink;
@@ -25,7 +30,73 @@
     font-size: 2rem;
     font-weight: bold;
     margin-top: 2rem;
-    // }
+  }
+}
+
+.tech-skills {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .as-is {
+    padding-left: 1rem;
+    ul {
+      padding-left: 1rem;
+      li {
+        // list-style-type: '\1F333';
+        padding-left: 0.5rem;
+
+        &:nth-child(n) {
+          list-style-type: '\1F33F';
+        }
+
+        &:nth-child(n + 3) {
+          list-style-type: '\1F331';
+        }
+      }
+    }
+  }
+
+  .to-be {
+    padding-left: 1rem;
+    ul {
+      padding-left: 1rem;
+      li {
+        padding-left: 0.5rem;
+
+        &:nth-child(1) {
+          list-style-type: '\1F349';
+        }
+
+        &:nth-child(2) {
+          list-style-type: '\1F348';
+        }
+
+        &:nth-child(3) {
+          list-style-type: '\1F34E';
+        }
+
+        &:nth-child(4) {
+          list-style-type: '\1F34C';
+        }
+
+        &:nth-child(5) {
+          list-style-type: '\1F353';
+        }
+
+        &:nth-child(6) {
+          list-style-type: '\1F34A';
+        }
+
+        &:nth-child(7) {
+          list-style-type: '\1F352';
+        }
+      }
+    }
   }
 }
 
@@ -85,6 +156,12 @@
 
 // set the maximum width of the <hr>, <input>, and <textarea>
 @media screen and (min-width: 451px) {
+  .tech-skills {
+    width: 350px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .contact-form {
     hr {
       width: 180px;
@@ -105,5 +182,12 @@
     width: 700px;
     height: auto;
     margin: 0 auto;
+
+    p {
+      // display a paragraph including additional content
+      &:nth-child(3) {
+        display: unset;
+      }
+    }
   }
 }
