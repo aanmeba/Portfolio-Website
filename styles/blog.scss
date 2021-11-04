@@ -31,13 +31,22 @@
       // display a title and keyword on the top and at the bottom respectively
       justify-content: space-between;
       align-items: flex-start;
+      color: $text-navy;
+
+      .hidden {
+        // visibility: hidden;
+        display: none;
+      }
 
       .blog-title {
         font-family: $font-text;
         font-size: 1rem;
         padding-right: 0.5rem;
-        color: $text-navy;
         text-align: left;
+      }
+
+      p {
+        @include blogDate;
       }
     }
 
@@ -81,6 +90,9 @@
   .blog-container {
     .blog-box {
       .blog-box__link {
+        .hidden {
+          display: unset;
+        }
         .blog-title {
           font-size: 1.6rem;
         }

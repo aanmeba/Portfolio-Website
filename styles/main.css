@@ -1085,14 +1085,24 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  color: #2b3073;
+}
+
+.blog-container .blog-box .blog-box__link .hidden {
+  display: none;
 }
 
 .blog-container .blog-box .blog-box__link .blog-title {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   padding-right: 0.5rem;
-  color: #2b3073;
   text-align: left;
+}
+
+.blog-container .blog-box .blog-box__link p {
+  font-family: "Noto Sans", sans-serif;
+  color: #a4a4a5;
+  font-size: 0.7rem;
 }
 
 .blog-container .blog-box .disabled {
@@ -1125,6 +1135,9 @@ body {
 }
 
 @media screen and (min-width: 735px) {
+  .blog-container .blog-box .blog-box__link .hidden {
+    display: unset;
+  }
   .blog-container .blog-box .blog-box__link .blog-title {
     font-size: 1.6rem;
   }
@@ -1319,10 +1332,10 @@ body {
 }
 
 .post-title p {
+  font-family: "Noto Sans", sans-serif;
+  color: #a4a4a5;
+  font-size: 0.7rem;
   padding-top: 2.5rem;
-  font-family: "Ubuntu", sans-serif;
-  color: #72737e;
-  font-size: 0.9rem;
 }
 
 .post-title h1 {

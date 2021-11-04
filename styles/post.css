@@ -175,10 +175,10 @@ body {
 }
 
 .post-title p {
-  padding-top: 2.5rem;
   font-family: "Ubuntu", sans-serif;
   color: #72737e;
   font-size: 0.9rem;
+  padding-top: 2.5rem;
 }
 
 .post-title h1 {
