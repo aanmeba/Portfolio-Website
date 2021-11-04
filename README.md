@@ -2,6 +2,10 @@
 
 This is my portfolio website only using HTML and CSS. Some of content are placehoders and they will be updated soon.
 
+## Demo
+
+Check out the website [here](https://aanmeba.github.io/Portfolio-Website/)
+
 ## Design Reference
 
 - The design of the `index` page is copied from [jensimmons.com](https://labs.jensimmons.com/2017/03-004.html)
@@ -20,7 +24,3 @@ This is my portfolio website only using HTML and CSS. Some of content are placeh
 **Flexbox**
 
 - aligns elements in `<footer>`, `<header>`, portfolio cards, and more
-
-## Demo
-
-Check out the website [here](https://aanmeba.github.io/Portfolio-Website/)
