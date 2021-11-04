@@ -61,6 +61,31 @@ body {
   font-size: calc(1.5rem + 1vw);
 }
 
+.exp {
+  -webkit-animation: changeColor 5s infinite;
+          animation: changeColor 5s infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes changeColor {
+  33% {
+    color: #00e75e;
+  }
+  66% {
+    color: #ffd900;
+  }
+}
+
+@keyframes changeColor {
+  33% {
+    color: #00e75e;
+  }
+  66% {
+    color: #ffd900;
+  }
+}
+
 .side-text {
   visibility: hidden;
 }
