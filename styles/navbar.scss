@@ -14,6 +14,7 @@ header {
   top: 0;
   z-index: 1;
 
+  /*** title component aligning text with flexbox */
   .header-title {
     @include bold-text;
     padding: 1rem;
@@ -43,6 +44,7 @@ header {
     }
   }
 
+  /*** navbar component */
   .navbar {
     width: 100vw;
     margin-bottom: 1rem;

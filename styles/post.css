@@ -37,6 +37,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*** title component aligning text with flexbox */
+  /*** navbar component */
 }
 
 header .header-title {
@@ -143,6 +145,7 @@ body {
   margin-bottom: 4rem;
 }
 
+/*** a footer component containing icons displays at the bottom of each page */
 #footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,9 +178,9 @@ body {
 }
 
 .post-title p {
-  font-family: "Ubuntu", sans-serif;
-  color: #72737e;
-  font-size: 0.9rem;
+  font-family: "Noto Sans", sans-serif;
+  color: #a4a4a5;
+  font-size: 0.7rem;
   padding-top: 2.5rem;
 }
 
@@ -190,20 +193,25 @@ body {
   text-align: left;
 }
 
-figure {
+/*** main image and caption component */
+figure,
+.blog-image {
   padding-bottom: 1.5rem;
 }
 
-figure img {
+figure img,
+.blog-image img {
   width: 100%;
 }
 
-figure figcaption {
+figure figcaption,
+.blog-image figcaption {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-size: 0.8rem;
 }
 
+/*** article component including headings and paragraphs */
 .post-main .post-headings {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2rem;
@@ -211,6 +219,10 @@ figure figcaption {
   text-align: left;
   padding-bottom: 1.5rem;
   text-align: left;
+}
+
+.post-main .post-headings:nth-child(2) {
+  color: red !important;
 }
 
 .post-main p {
@@ -234,6 +246,14 @@ figure figcaption {
   }
   .post-title h1 {
     font-size: 3rem;
+  }
+  /*** image component changes the layout */
+  .blog-image {
+    width: 400px;
+    float: left;
+    position: relative;
+    left: -50px;
+    top: 5px;
   }
 }
 /*# sourceMappingURL=post.css.map */

@@ -37,6 +37,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*** title component aligning text with flexbox */
+  /*** navbar component */
 }
 
 header .header-title {
@@ -143,6 +145,7 @@ body {
   margin-bottom: 4rem;
 }
 
+/*** a footer component containing icons displays at the bottom of each page */
 #footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,6 +183,7 @@ body {
       grid-template-rows: auto;
   gap: 1.5rem;
   justify-items: center;
+  /*** a blog list component to display titles, dates, and images */
 }
 
 .blog-container .blog-box {

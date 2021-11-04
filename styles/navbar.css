@@ -28,6 +28,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*** title component aligning text with flexbox */
+  /*** navbar component */
 }
 
 header .header-title {

@@ -12,6 +12,7 @@ body {
   background-image: linear-gradient(315deg, #f5f2e3 0%, #f6f0ea 74%);
 }
 
+/*** a component to display the experimental layout for the home page */
 .container {
   width: 70vw;
   height: 77vh;
@@ -201,6 +202,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*** title component aligning text with flexbox */
+  /*** navbar component */
 }
 
 header .header-title {
@@ -307,6 +310,7 @@ body {
   margin-bottom: 4rem;
 }
 
+/*** a footer component containing icons displays at the bottom of each page */
 #footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,6 +365,7 @@ body {
   margin-top: 2rem;
 }
 
+/*** contact component */
 .contact-form {
   width: 100%;
 }
@@ -476,6 +481,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*** title component aligning text with flexbox */
+  /*** navbar component */
 }
 
 header .header-title {
@@ -582,6 +589,7 @@ body {
   margin-bottom: 4rem;
 }
 
+/*** a footer component containing icons displays at the bottom of each page */
 #footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,6 +655,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*** title component aligning text with flexbox */
+  /*** navbar component */
 }
 
 header .header-title {
@@ -753,6 +763,7 @@ body {
   margin-bottom: 4rem;
 }
 
+/*** a footer component containing icons displays at the bottom of each page */
 #footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,6 +823,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  /*** icon component combining the github link and demo link */
 }
 
 .project-container .project-box .project-box__link {
@@ -908,6 +920,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*** title component aligning text with flexbox */
+  /*** navbar component */
 }
 
 header .header-title {
@@ -1014,6 +1028,7 @@ body {
   margin-bottom: 4rem;
 }
 
+/*** a footer component containing icons displays at the bottom of each page */
 #footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1051,6 +1066,7 @@ body {
       grid-template-rows: auto;
   gap: 1.5rem;
   justify-items: center;
+  /*** a blog list component to display titles, dates, and images */
 }
 
 .blog-container .blog-box {
@@ -1194,6 +1210,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*** title component aligning text with flexbox */
+  /*** navbar component */
 }
 
 header .header-title {
@@ -1300,6 +1318,7 @@ body {
   margin-bottom: 4rem;
 }
 
+/*** a footer component containing icons displays at the bottom of each page */
 #footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1347,20 +1366,25 @@ body {
   text-align: left;
 }
 
-figure {
+/*** main image and caption component */
+figure,
+.blog-image {
   padding-bottom: 1.5rem;
 }
 
-figure img {
+figure img,
+.blog-image img {
   width: 100%;
 }
 
-figure figcaption {
+figure figcaption,
+.blog-image figcaption {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-size: 0.8rem;
 }
 
+/*** article component including headings and paragraphs */
 .post-main .post-headings {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2rem;
@@ -1368,6 +1392,10 @@ figure figcaption {
   text-align: left;
   padding-bottom: 1.5rem;
   text-align: left;
+}
+
+.post-main .post-headings:nth-child(2) {
+  color: red !important;
 }
 
 .post-main p {
@@ -1391,6 +1419,14 @@ figure figcaption {
   }
   .post-title h1 {
     font-size: 3rem;
+  }
+  /*** image component changes the layout */
+  .blog-image {
+    width: 400px;
+    float: left;
+    position: relative;
+    left: -50px;
+    top: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
