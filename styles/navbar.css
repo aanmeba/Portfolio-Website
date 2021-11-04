@@ -76,6 +76,62 @@ header .header-title a .header-title-2 {
   padding-left: 3px;
 }
 
+header .header-title:hover .header-title-1 {
+  -webkit-animation: rotateTitle 1s 1;
+          animation: rotateTitle 1s 1;
+}
+
+header .header-title:active .header-title-1 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@-webkit-keyframes rotateTitle {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  25% {
+    -webkit-transform: scale(1.2) rotate(5deg);
+            transform: scale(1.2) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: scale(1.2) rotate(-5deg);
+            transform: scale(1.2) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) rotate(3deg);
+            transform: scale(1.2) rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+@keyframes rotateTitle {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  25% {
+    -webkit-transform: scale(1.2) rotate(5deg);
+            transform: scale(1.2) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: scale(1.2) rotate(-5deg);
+            transform: scale(1.2) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) rotate(3deg);
+            transform: scale(1.2) rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
 header .navbar {
   width: 100vw;
   margin-bottom: 1rem;

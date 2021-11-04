@@ -43,6 +43,22 @@ body {
   font-size: calc(1.5rem + 1vw);
 }
 
+// animate a part of the title
+.exp {
+  animation: changeColor 5s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes changeColor {
+  33% {
+    color: $point-green;
+  }
+
+  66% {
+    color: $point-orange;
+  }
+}
+
 .side-text {
   visibility: hidden;
 }

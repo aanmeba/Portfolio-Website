@@ -42,6 +42,41 @@ header {
         padding-left: 3px;
       }
     }
+
+    &:hover {
+      .header-title-1 {
+        animation: rotateTitle 1s 1;
+      }
+    }
+
+    // 📌📌📌 need to check when touching the menu on mobile
+    &:active {
+      .header-title-1 {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  // animate the title when hovering the element
+  @keyframes rotateTitle {
+    0% {
+      transform: rotate(-2deg);
+    }
+    25% {
+      transform: scale(1.2) rotate(5deg);
+    }
+
+    50% {
+      transform: scale(1.2) rotate(-5deg);
+    }
+
+    75% {
+      transform: scale(1.2) rotate(3deg);
+    }
+
+    100% {
+      transform: rotate(-1deg);
+    }
   }
 
   /*** navbar component */
