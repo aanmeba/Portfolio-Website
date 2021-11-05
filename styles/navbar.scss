@@ -90,7 +90,7 @@ header {
         display: inline-block;
         border-right: 0.2rem solid $point-green;
         // remove the last border-right
-        &:nth-child(3) {
+        &:nth-child(4) {
           border-right: none;
         }
 

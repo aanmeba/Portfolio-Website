@@ -1,4 +1,4 @@
-.project-container {
+.lab-container {
   width: 80vw;
   margin: 0 auto;
   display: -ms-grid;
@@ -11,7 +11,7 @@
   justify-items: center;
 }
 
-.project-container .project-box {
+.lab-container .lab-box {
   width: 90%;
   min-height: 35vh;
   -webkit-box-sizing: border-box;
@@ -34,7 +34,7 @@
   /*** icon component combining the github link and demo link */
 }
 
-.project-container .project-box .project-box__link {
+.lab-container .lab-box .lab-box__link {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 20%;
@@ -49,43 +49,48 @@
           align-items: center;
 }
 
-.project-container .project-box .project-box__link i {
+.lab-container .lab-box .lab-box__link i {
   font-size: 1.1rem;
   padding: 0.2rem;
 }
 
-.project-container .project-box .project-box__content {
+.lab-container .lab-box .disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.lab-container .lab-box .lab-box__content {
   color: #2b3073;
   text-align: left;
   width: 100%;
 }
 
-.project-container .project-box .project-box__content .project-heading {
+.lab-container .lab-box .lab-box__content .lab-heading {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   line-height: 2rem;
 }
 
-.project-container .project-box .project-box__content .project-tech {
+.lab-container .lab-box .lab-box__content .lab-tech {
   font-family: "Noto Sans", sans-serif;
   padding: 1rem 0 0;
 }
 
-.project-container .project-box:nth-child(3n + 1) {
-  background-color: #00e75e;
-}
-
-.project-container .project-box:nth-child(3n + 2) {
+.lab-container .lab-box:nth-child(3n + 1) {
   background-color: #ffd900;
 }
 
-.project-container .project-box:nth-child(3n) {
+.lab-container .lab-box:nth-child(3n + 2) {
   background-color: #fd025e;
 }
 
+.lab-container .lab-box:nth-child(3n) {
+  background-color: #00e75e;
+}
+
 @media screen and (min-width: 1500px) {
-  .project-container {
+  .lab-container {
     width: 1200px;
   }
 }
-/*# sourceMappingURL=portfolio.css.map */
+/*# sourceMappingURL=lab.css.map */

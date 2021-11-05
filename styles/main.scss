@@ -1,9 +1,17 @@
+// settings
 @import 'variables';
-@import 'index';
-@import 'about';
 @import 'settings';
+
+// component
 @import 'navbar';
 @import 'footer';
+
+// pages
+@import 'index';
+@import 'about';
 @import 'portfolio';
 @import 'blog';
+@import 'lab';
+
+// sub-pages
 @import 'post';
