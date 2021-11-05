@@ -49,6 +49,11 @@
           align-items: center;
 }
 
+.lab-container .lab-box .lab-box__link a {
+  text-decoration: none;
+  color: #2b3073;
+}
+
 .lab-container .lab-box .lab-box__link i {
   font-size: 1.1rem;
   padding: 0.2rem;
