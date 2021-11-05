@@ -1,6 +1,6 @@
 @import 'variables';
 
-.project-container {
+.lab-container {
   width: 80vw;
   margin: 0 auto;
 
@@ -12,7 +12,7 @@
   // make the box fit to the grid templates
   justify-items: center;
 
-  .project-box {
+  .lab-box {
     width: 90%;
     // set the minimum height so the box can be flexible depending on the inside text
     min-height: 35vh;
@@ -27,7 +27,7 @@
     position: relative;
 
     /*** icon component combining the github link and demo link */
-    .project-box__link {
+    .lab-box__link {
       align-self: flex-end;
       width: 20%;
       display: flex;
@@ -39,37 +39,43 @@
         padding: 0.2rem;
       }
     }
-    .project-box__content {
+
+    .disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    .lab-box__content {
       color: $text-navy;
       text-align: left;
       width: 100%;
 
-      .project-heading {
+      .lab-heading {
         font-family: $font-bold;
+
         font-size: 2rem;
         line-height: 2rem;
       }
-
-      .project-tech {
+      .lab-tech {
         font-family: $font-text;
         padding: 1rem 0 0;
       }
     }
     // apply three different colors in a row
     &:nth-child(3n + 1) {
-      background-color: $point-green;
-    }
-    &:nth-child(3n + 2) {
       background-color: $point-orange;
     }
-    &:nth-child(3n) {
+    &:nth-child(3n + 2) {
       background-color: $point-pink;
+    }
+    &:nth-child(3n) {
+      background-color: $point-green;
     }
   }
 }
 
 @media screen and (min-width: 1500px) {
-  .project-container {
+  .lab-container {
     width: 1200px;
   }
 }
