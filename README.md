@@ -1,10 +1,10 @@
 # Portfolio Website
 
-This is my portfolio website only using HTML and CSS. Some of content are placehoders and they will be updated soon.
+This is my portfolio website **only** using HTML and CSS. Some of content are placehoders and they will be updated soon.
 
 ## Demo
 
-Check out the website [here](https://aanmeba.github.io/Portfolio-Website/)
+Check out the website [here](https://jungah.netlify.app/)
 
 ## Design Reference
 
