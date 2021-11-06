@@ -1,16 +1,16 @@
-## Portfolio Website
+# Portfolio Website
 
 This is my portfolio website **only** using `HTML` and `CSS`. Some of the content are placeholders and they will be updated soon.
 
-# Link
+## Link
 
 Check out the website [here](https://jungah.netlify.app/)
 
-# Design Reference
+## Design Reference
 
 - The design of the `home` page is copied from [jensimmons.com](https://labs.jensimmons.com/2017/03-004.html)
 
-# Features
+## Features
 
 ### Animation
 
