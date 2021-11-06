@@ -116,6 +116,9 @@ body {
   .side-text {
     visibility: visible;
 
+    display: flex;
+    align-items: center;
+
     @include heading;
 
     grid-area: side;
