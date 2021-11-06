@@ -1,26 +1,26 @@
-# Portfolio Website
+## Portfolio Website
 
-This is my portfolio website **only** using HTML and CSS. Some of content are placehoders and they will be updated soon.
+This is my portfolio website **only** using `HTML` and `CSS`. Some of the content are placeholders and they will be updated soon.
 
-## Demo
+# Link
 
 Check out the website [here](https://jungah.netlify.app/)
 
-## Design Reference
+# Design Reference
 
-- The design of the `index` page is copied from [jensimmons.com](https://labs.jensimmons.com/2017/03-004.html)
+- The design of the `home` page is copied from [jensimmons.com](https://labs.jensimmons.com/2017/03-004.html)
 
-## Features
+# Features
 
-**Animation**
+### Animation
 
-- `@keyframes` applies to changing text colour on home page and scale and rotation of title in `<header>` element
+- `@keyframes` applies to changing text colour on home page and scale and rotation of title in the `<header>` element
 
-**CSS Grid**
+### CSS Grid
 
 - positions various elements on the home page
 - aligns the list of the articles on blog page
 
-**Flexbox**
+### Flexbox
 
-- aligns elements in `<footer>`, `<header>`, portfolio cards, and more
+- aligns elements in the `<footer>`, `<header>`, portfolio cards, and more
