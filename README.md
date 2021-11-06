@@ -8,7 +8,7 @@ Check out the website [here](https://jungah.netlify.app/)
 
 ## Design Reference
 
-- The design of the `home` page is copied from [jensimmons.com](https://labs.jensimmons.com/2017/03-004.html)
+The design of the `home` page is copied from [jensimmons.com](https://labs.jensimmons.com/2017/03-004.html)
 
 ## Features
 
