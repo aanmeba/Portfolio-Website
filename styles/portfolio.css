@@ -49,7 +49,12 @@
           align-items: center;
 }
 
-.project-container .project-box .project-box__link i {
+.project-container .project-box .project-box__link a {
+  text-decoration: none;
+  color: #2b3073;
+}
+
+.project-container .project-box .project-box__link a i {
   font-size: 1.1rem;
   padding: 0.2rem;
 }

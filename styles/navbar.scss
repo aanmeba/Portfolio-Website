@@ -121,3 +121,13 @@ header {
     margin-bottom: 2.5rem;
   }
 }
+
+@media screen and (max-height: 320px) {
+  header {
+    .header-title {
+      // give more space for main when the height is less than 320px
+      padding: 0.3rem;
+      margin-top: 0;
+    }
+  }
+}

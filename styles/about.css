@@ -161,6 +161,7 @@
 .contact-form form input[type='submit']:hover, .contact-form form input[type='submit']:active {
   border: none;
   background-color: #00e75e;
+  border-radius: 2px;
 }
 
 @media screen and (min-width: 451px) {

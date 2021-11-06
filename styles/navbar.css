@@ -187,4 +187,11 @@ header .navbar ul li a:active {
   text-align: center;
   margin-bottom: 2.5rem;
 }
+
+@media screen and (max-height: 320px) {
+  header .header-title {
+    padding: 0.3rem;
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=navbar.css.map */

@@ -197,6 +197,13 @@ header .navbar ul li a:active {
   margin-bottom: 2.5rem;
 }
 
+@media screen and (max-height: 320px) {
+  header .header-title {
+    padding: 0.3rem;
+    margin-top: 0;
+  }
+}
+
 body {
   margin-bottom: 4rem;
 }
@@ -581,6 +588,7 @@ body {
 .contact-form form input[type='submit']:hover, .contact-form form input[type='submit']:active {
   border: none;
   background-color: #00e75e;
+  border-radius: 2px;
 }
 
 @media screen and (min-width: 451px) {
@@ -666,7 +674,12 @@ body {
           align-items: center;
 }
 
-.project-container .project-box .project-box__link i {
+.project-container .project-box .project-box__link a {
+  text-decoration: none;
+  color: #2b3073;
+}
+
+.project-container .project-box .project-box__link a i {
   font-size: 1.1rem;
   padding: 0.2rem;
 }
@@ -880,6 +893,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.lab-container .lab-box .lab-box__link a {
+  text-decoration: none;
+  color: #2b3073;
 }
 
 .lab-container .lab-box .lab-box__link i {

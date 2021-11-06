@@ -34,9 +34,13 @@
       justify-content: flex-end;
       align-items: center;
 
-      i {
-        font-size: 1.1rem;
-        padding: 0.2rem;
+      a {
+        text-decoration: none;
+        color: $text-navy;
+        i {
+          font-size: 1.1rem;
+          padding: 0.2rem;
+        }
       }
     }
     .project-box__content {
