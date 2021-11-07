@@ -11,13 +11,13 @@ body {
   height: 77vh;
   margin: 10vh auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr), 0.5fr;
+  grid-template-columns: repeat(2, 1fr), 0.5fr;
   grid-template-rows: 1fr 1fr 0.5fr 1fr;
   grid-template-areas:
-    'title title title title'
-    '. . . vertical'
-    'footer footer . vertical'
-    'navbar navbar . vertical';
+    'title title title'
+    '. . vertical'
+    'footer . vertical'
+    'navbar . vertical';
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -96,13 +96,14 @@ body {
   .container {
     width: 500px;
     height: 65vh;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 0.5fr 0.5fr 2fr 1fr;
     grid-template-areas:
-      'title title . .'
-      '. vertical . .'
-      '. vertical side .'
-      '. vertical . .'
-      'navbar footer footer footer';
+      'title title .'
+      '. vertical .'
+      '. vertical side'
+      '. vertical .'
+      'navbar footer footer';
   }
 
   .title-vertical {
