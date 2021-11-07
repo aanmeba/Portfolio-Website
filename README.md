@@ -14,13 +14,13 @@ The design of the `home` page is copied from [jensimmons.com](https://labs.jensi
 
 ### Animation
 
-- `@keyframes` applies to changing text colour on home page and scale and rotation of title in the `<header>` element
+- `@keyframes` changes text colour on home page and scale and rotation of title in the `<header>` element
 
 ### CSS Grid
 
 - positions various elements on the home page
-- aligns the list of the articles on blog page
+- aligns the list of the previous projects on portfolio page and the articles on the blog page
 
 ### Flexbox
 
-- aligns elements in the `<footer>`, `<header>`, portfolio cards, and more
+- aligns elements in the `<footer>`, `<header>`, project cards on portfolio page, and more
