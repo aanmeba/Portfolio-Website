@@ -1,8 +1,14 @@
+/* Note 
+ * style files are originally written in scss
+ * comments starts with hash (#) indicate components
+ * e.g. /* # graphical component * /
+ */
+
 // settings
 @import 'variables';
 @import 'settings';
 
-// component
+// components
 @import 'navbar';
 @import 'footer';
 

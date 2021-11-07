@@ -1,3 +1,4 @@
+/* remove all the default margin and padding on each element */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ html {
   margin: 0 auto;
 }
 
+/* # text component - published date and a headline */
 .post-title p {
   font-family: "Noto Sans", sans-serif;
   color: #a4a4a5;
@@ -28,7 +30,7 @@ html {
   text-align: left;
 }
 
-/*** main image and caption component */
+/* # graphical component - main image and caption */
 figure,
 .blog-image {
   padding-bottom: 1.5rem;
@@ -46,7 +48,7 @@ figure figcaption,
   font-size: 0.8rem;
 }
 
-/*** article component including headings and paragraphs */
+/* # text component - headings and paragraphs */
 .post-main .post-headings {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2rem;
@@ -82,7 +84,7 @@ figure figcaption,
   .post-title h1 {
     font-size: 3rem;
   }
-  /*** image component changes the layout */
+  /* # graphical component - image and caption that changes the layout */
   .blog-image {
     width: 400px;
     float: left;

@@ -1,16 +1,17 @@
 @import 'settings';
 
+/* # graphical component - the grid and flexbox to display the list of blog articles */
 .blog-container {
   width: 80vw;
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(250px, 1fr);
+  grid-template-columns: minmax(250px, 1fr);
   grid-template-rows: auto;
   gap: 1.5rem;
   justify-items: center;
 
-  /*** a blog list component to display titles, dates, and images */
+  /* # graphical component - a list of blog posts displaying titles, dates, and images */
   .blog-box {
     width: 100%;
     height: auto;
@@ -22,16 +23,16 @@
 
     .blog-box__link {
       text-decoration: none;
-      // to apply the justify-content: space-between, height should be set
+      /* to apply the 'justify-content: space-between', height should be set */
       height: 100%;
       display: flex;
       flex-direction: column;
-      // display a title and keyword on the top and at the bottom respectively
+      /* display a title and keyword on the top and at the bottom respectively */
       justify-content: space-between;
       align-items: flex-start;
       color: $text-navy;
 
-      // hidden some content in mobile view
+      /* hide some content in mobile view */
       .hidden {
         display: none;
       }
@@ -48,7 +49,7 @@
       }
     }
 
-    // block a click event for unlinked blog pages
+    /* block a click event for unlinked blog pages */
     .disabled {
       pointer-events: none;
       cursor: default;
@@ -88,7 +89,7 @@
   .blog-container {
     .blog-box {
       .blog-box__link {
-        // display the content hidden in mobile view
+        /* display the content hidden in mobile view */
         .hidden {
           display: unset;
         }

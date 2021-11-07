@@ -1,3 +1,4 @@
+/* remove all the default margin and padding on each element */
 * {
   margin: 0;
   padding: 0;
@@ -7,18 +8,19 @@ html {
   height: 100vh;
 }
 
+/* # graphical component - the grid and flexbox to display the list of blog articles */
 .blog-container {
   width: 80vw;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[250px];
-      grid-template-columns: repeat(250px, 1fr);
+  -ms-grid-columns: minmax(250px, 1fr);
+      grid-template-columns: minmax(250px, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   gap: 1.5rem;
   justify-items: center;
-  /*** a blog list component to display titles, dates, and images */
+  /* # graphical component - a list of blog posts displaying titles, dates, and images */
 }
 
 .blog-container .blog-box {
@@ -35,10 +37,12 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  /* block a click event for unlinked blog pages */
 }
 
 .blog-container .blog-box .blog-box__link {
   text-decoration: none;
+  /* to apply the 'justify-content: space-between', height should be set */
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +51,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* display a title and keyword on the top and at the bottom respectively */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -54,6 +59,7 @@ html {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #2b3073;
+  /* hide some content in mobile view */
 }
 
 .blog-container .blog-box .blog-box__link .hidden {
@@ -103,6 +109,9 @@ html {
 }
 
 @media screen and (min-width: 735px) {
+  .blog-container .blog-box .blog-box__link {
+    /* display the content hidden in mobile view */
+  }
   .blog-container .blog-box .blog-box__link .hidden {
     display: unset;
   }

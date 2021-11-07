@@ -1,3 +1,4 @@
+/* remove all the default margin and padding on each element */
 * {
   margin: 0;
   padding: 0;
@@ -28,8 +29,9 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
-  /*** title component aligning text with flexbox */
-  /*** navbar component */
+  /* # text component - aligning title with flexbox */
+  /* animate the title when hovering the element */
+  /* # text component - navbar */
 }
 
 header .header-title {
@@ -151,6 +153,7 @@ header .navbar ul {
 header .navbar ul li {
   display: inline-block;
   border-right: 0.2rem solid #00e75e;
+  /* remove the last border-right */
 }
 
 header .navbar ul li:nth-child(4) {
@@ -190,6 +193,7 @@ header .navbar ul li a:active {
 
 @media screen and (max-height: 320px) {
   header .header-title {
+    /* give more space for main when the height is less than 320px */
     padding: 0.3rem;
     margin-top: 0;
   }

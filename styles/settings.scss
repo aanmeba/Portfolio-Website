@@ -1,5 +1,6 @@
 @import 'variables';
 
+// @mixins that repeats throught the website
 @mixin bold-text {
   font-family: $font-bold;
   text-transform: uppercase;
@@ -28,7 +29,7 @@
   font-size: 0.7rem;
 }
 
-// remove all the default margin and padding on each element
+/* remove all the default margin and padding on each element */
 * {
   margin: 0;
   padding: 0;

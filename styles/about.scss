@@ -11,7 +11,7 @@
   p {
     margin: 1rem 0;
 
-    // hide a paragraph including additional content in mobile view
+    /* hide a paragraph including additional content in mobile view */
     &:nth-child(3) {
       display: none;
     }
@@ -27,6 +27,9 @@
     font-size: 2rem;
     font-weight: bold;
     margin-top: 2rem;
+  }
+  a {
+    color: $text-navy;
   }
 }
 
@@ -44,7 +47,6 @@
     ul {
       padding-left: 1rem;
       li {
-        // list-style-type: '\1F333';
         padding-left: 0.5rem;
 
         &:nth-child(n) {
@@ -97,7 +99,7 @@
   }
 }
 
-/*** contact component */
+/* # text component - contact form */
 .contact-form {
   width: 100%;
 
@@ -112,7 +114,6 @@
     flex-direction: column;
 
     label {
-      // font-family: $font-text;
       font-family: $font-bold;
       text-transform: uppercase;
       font-weight: 600;
@@ -152,7 +153,7 @@
   }
 }
 
-// set the maximum width of the <hr>, <input>, and <textarea>
+/* set the maximum width of the <hr>, <input>, and <textarea> */
 @media screen and (min-width: 451px) {
   .tech-skills {
     width: 350px;
@@ -182,7 +183,7 @@
     margin: 0 auto;
 
     p {
-      // display a paragraph including additional content
+      /* display a paragraph including additional content */
       &:nth-child(3) {
         display: unset;
       }

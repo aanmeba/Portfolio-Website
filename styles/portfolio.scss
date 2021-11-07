@@ -1,22 +1,23 @@
 @import 'variables';
 
+/* # graphical component - grid and flexbox to display the previous projects */
 .project-container {
   width: 80vw;
   margin: 0 auto;
 
   display: grid;
-  // minmax(250px, 1fr) is the best fit to the mobile, expecially iphone 5/se
+  /* minmax(250px, 1fr) is the best fit to the mobile, expecially iphone 5/se */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto;
   gap: 3rem 1.5rem;
-  // make the box fit to the grid templates
+  /* make the box fit to the grid templates */
   justify-items: center;
 
   .project-box {
     width: 90%;
-    // set the minimum height so the box can be flexible depending on the inside text
+    /* set the minimum height so the box can be flexible depending on the inside text */
     min-height: 35vh;
-    // don't forget to add box-sizing: border-box!!!! (in most cases)
+    /* don't forget to add box-sizing: border-box!!!! (in most cases) */
     box-sizing: border-box;
     padding: 0.8rem 0.8rem 2rem 2rem;
 
@@ -26,7 +27,7 @@
     align-items: center;
     position: relative;
 
-    /*** icon component combining the github link and demo link */
+    /* # graphical component - the github link and external link icons */
     .project-box__link {
       align-self: flex-end;
       width: 20%;
@@ -59,7 +60,7 @@
         padding: 1rem 0 0;
       }
     }
-    // apply three different colors in a row
+    /* apply three different colors in rotation */
     &:nth-child(3n + 1) {
       background-color: $point-green;
     }

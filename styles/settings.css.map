@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AA+BA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,KAAK;CACd",
+    "mappings": "AA+BA,+DAA+D;AAC/D,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,KAAK;CACd",
     "sources": [
         "settings.scss",
         "variables.scss"

@@ -9,6 +9,7 @@
 
 .about-content p {
   margin: 1rem 0;
+  /* hide a paragraph including additional content in mobile view */
 }
 
 .about-content p:nth-child(3) {
@@ -28,6 +29,10 @@
   font-size: 2rem;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+.about-content a {
+  color: #2b3073;
 }
 
 .tech-skills {
@@ -105,7 +110,7 @@
   list-style-type: '\1F352';
 }
 
-/*** contact component */
+/* # text component - contact form */
 .contact-form {
   width: 100%;
 }
@@ -164,6 +169,7 @@
   border-radius: 2px;
 }
 
+/* set the maximum width of the <hr>, <input>, and <textarea> */
 @media screen and (min-width: 451px) {
   .tech-skills {
     width: 350px;
@@ -190,6 +196,9 @@
     width: 700px;
     height: auto;
     margin: 0 auto;
+  }
+  .about-content p {
+    /* display a paragraph including additional content */
   }
   .about-content p:nth-child(3) {
     display: unset;

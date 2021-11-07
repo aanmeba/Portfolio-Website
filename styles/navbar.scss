@@ -13,7 +13,7 @@ header {
   top: 0;
   z-index: 1;
 
-  /*** title component aligning text with flexbox */
+  /* # text component - aligning title with flexbox */
   .header-title {
     @include bold-text;
     padding: 1rem;
@@ -47,8 +47,6 @@ header {
         animation: rotateTitle 1s 1;
       }
     }
-
-    // 📌📌📌 need to check when touching the menu on mobile
     &:active {
       .header-title-1 {
         transform: scale(1.2);
@@ -56,7 +54,7 @@ header {
     }
   }
 
-  // animate the title when hovering the element
+  /* animate the title when hovering the element */
   @keyframes rotateTitle {
     0% {
       transform: rotate(-2deg);
@@ -78,7 +76,7 @@ header {
     }
   }
 
-  /*** navbar component */
+  /* # text component - navbar */
   .navbar {
     width: 100vw;
     margin-bottom: 1rem;
@@ -89,7 +87,7 @@ header {
       li {
         display: inline-block;
         border-right: 0.2rem solid $point-green;
-        // remove the last border-right
+        /* remove the last border-right */
         &:nth-child(4) {
           border-right: none;
         }
@@ -125,7 +123,7 @@ header {
 @media screen and (max-height: 320px) {
   header {
     .header-title {
-      // give more space for main when the height is less than 320px
+      /* give more space for main when the height is less than 320px */
       padding: 0.3rem;
       margin-top: 0;
     }

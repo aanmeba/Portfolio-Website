@@ -5,7 +5,7 @@ body {
   background-image: linear-gradient(315deg, $bg-color 0%, $bg-gradient 74%);
 }
 
-/*** a component to display the experimental layout for the home page */
+/* # text component - unusual homepage title layout */
 .container {
   width: 70vw;
   height: 77vh;
@@ -29,8 +29,8 @@ body {
   align-self: flex-end;
   color: $text-navy;
 
-  // apply responsibe font-size
-  // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+  /* apply responsibe font-size */
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
   font-size: calc(1.2rem + 0.5vw);
 }
 
@@ -42,7 +42,7 @@ body {
   font-size: calc(1.5rem + 1vw);
 }
 
-// animate a part of the title
+/* animate a part of the title */
 .exp {
   animation: changeColor 5s infinite;
   animation-delay: 2s;
@@ -92,6 +92,7 @@ body {
   color: $text-navy;
 }
 
+/* tablet screen size */
 @media screen and (min-width: 601px) {
   .container {
     width: 500px;
@@ -133,6 +134,7 @@ body {
   }
 }
 
+/* desktop screen size */
 @media screen and (min-width: 900px) {
   .container {
     transform: rotate(315deg);

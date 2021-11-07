@@ -1,3 +1,4 @@
+/* remove all the default margin and padding on each element */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
   background-image: linear-gradient(315deg, #f5f2e3 0%, #f6f0ea 74%);
 }
 
-/*** a component to display the experimental layout for the home page */
+/* # text component - unusual homepage title layout */
 .container {
   width: 70vw;
   height: 77vh;
@@ -42,6 +43,8 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #2b3073;
+  /* apply responsibe font-size */
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
   font-size: calc(1.2rem + 0.5vw);
 }
 
@@ -61,6 +64,7 @@ body {
   font-size: calc(1.5rem + 1vw);
 }
 
+/* animate a part of the title */
 .exp {
   -webkit-animation: changeColor 5s infinite;
           animation: changeColor 5s infinite;
@@ -137,6 +141,7 @@ body {
   color: #2b3073;
 }
 
+/* tablet screen size */
 @media screen and (min-width: 601px) {
   .container {
     width: 500px;
@@ -187,6 +192,7 @@ body {
   }
 }
 
+/* desktop screen size */
 @media screen and (min-width: 900px) {
   .container {
     -webkit-transform: rotate(315deg);
