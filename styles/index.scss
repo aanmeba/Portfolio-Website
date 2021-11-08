@@ -1,10 +1,5 @@
 @import 'settings';
 
-body {
-  background-color: $bg-color;
-  background-image: linear-gradient(315deg, $bg-color 0%, $bg-gradient 74%);
-}
-
 /* # text component - unusual homepage title layout */
 .container {
   width: 70vw;
