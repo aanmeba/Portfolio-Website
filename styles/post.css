@@ -58,10 +58,6 @@ figure figcaption,
   text-align: left;
 }
 
-.post-main .post-headings:nth-child(2) {
-  color: red !important;
-}
-
 .post-main p {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
@@ -87,6 +83,7 @@ figure figcaption,
   /* # graphical component - image and caption that changes the layout */
   .blog-image {
     width: 400px;
+    /* place the text in the right side of the image */
     float: left;
     position: relative;
     left: -50px;

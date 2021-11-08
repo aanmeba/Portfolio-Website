@@ -15,10 +15,10 @@ body {
     li {
       list-style-type: none;
 
-      // hide codepen account
-      // &:nth-child(2) {
-      //   display: none;
-      // }
+      // hide instagram account
+      &:nth-child(4) {
+        display: none;
+      }
     }
   }
 }

@@ -20,6 +20,10 @@ body {
   list-style-type: none;
 }
 
+#footer ul li:nth-child(4) {
+  display: none;
+}
+
 .social {
   padding: 0.5rem;
 }

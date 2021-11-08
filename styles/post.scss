@@ -38,9 +38,6 @@ figure,
     font-family: $font-title;
     font-size: 1.2rem;
     @include blogText;
-    &:nth-child(2) {
-      color: red !important;
-    }
   }
 
   p {
@@ -71,6 +68,7 @@ figure,
   /* # graphical component - image and caption that changes the layout */
   .blog-image {
     width: 400px;
+    /* place the text in the right side of the image */
     float: left;
     position: relative;
     left: -50px;
