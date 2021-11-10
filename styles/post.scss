@@ -50,14 +50,7 @@ figure,
     padding-left: 1rem;
     li {
       padding-left: 0.5rem;
-      list-style-type: '\1F331';
-      // &:nth-child(n) {
-      //   list-style-type: square;
-      // }
-
-      // &:nth-child(n + 3) {
-
-      // }
+      list-style-type: none;
     }
   }
 }

@@ -159,6 +159,55 @@
     width: 350px;
     flex-direction: row;
     justify-content: space-between;
+
+    // .as-is {
+    //   ul {
+    //     li {
+    //       list-style-type: none;
+    //       &:nth-child(n) {
+    //         list-style-type: '\1F33F';
+    //       }
+
+    //       &:nth-child(n + 3) {
+    //         list-style-type: '\1F331';
+    //       }
+    //     }
+    //   }
+    // }
+
+    // .to-be {
+    //   ul {
+    //     li {
+    //       &:nth-child(1) {
+    //         list-style-type: '\1F349';
+    //       }
+
+    //       &:nth-child(2) {
+    //         list-style-type: '\1F348';
+    //       }
+
+    //       &:nth-child(3) {
+    //         list-style-type: '\1F34E';
+    //       }
+
+    //       &:nth-child(4) {
+    //         list-style-type: '\1F34C';
+    //       }
+
+    //       &:nth-child(5) {
+    //         list-style-type: '\1F353';
+    //       }
+
+    //       &:nth-child(6) {
+    //         list-style-type: '\1F34A';
+    //       }
+
+    //       &:nth-child(7) {
+    //         list-style-type: '\1F352';
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   .contact-form {
