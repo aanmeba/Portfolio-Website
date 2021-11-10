@@ -47,7 +47,7 @@
     ul {
       // padding-left: 1rem;
       li {
-        // padding-left: 0.5rem;
+        // padding-right: 0.5rem;
         /* "list-style-type: decimal" doesn't work on Chrome and Safari on my iPad. So it is safe to implement the same styling in an alternative way at the moment. 
         &:nth-child(n) {
           list-style-type: '\1F33F';
