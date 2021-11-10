@@ -45,17 +45,23 @@
   .as-is {
     padding-left: 1rem;
     ul {
-      padding-left: 1rem;
+      // padding-left: 1rem;
       li {
-        padding-left: 0.5rem;
-
+        // padding-left: 0.5rem;
+        /* "list-style-type: decimal" doesn't work on Chrome and Safari on my iPad. So it is safe to implement the same styling in an alternative way at the moment. 
         &:nth-child(n) {
           list-style-type: '\1F33F';
         }
 
         &:nth-child(n + 3) {
           list-style-type: '\1F331';
-        }
+        } */
+
+        /* alternative way to apply the list-style-type: decimal
+        1) adds list-style-type: none;
+        2) adds emojis in the HTML file
+        */
+        list-style-type: none;
       }
     }
   }
@@ -63,37 +69,37 @@
   .to-be {
     padding-left: 1rem;
     ul {
-      padding-left: 1rem;
+      // padding-left: 1rem;
       li {
-        padding-left: 0.5rem;
+        // padding-left: 0.5rem;
 
+        /* "list-style-type: decimal" doesn't work on Chrome and Safari on my iPad. So it is safe to implement the same styling in an alternative way at the moment. 
         &:nth-child(1) {
           list-style-type: '\1F349';
         }
-
         &:nth-child(2) {
           list-style-type: '\1F348';
         }
-
         &:nth-child(3) {
           list-style-type: '\1F34E';
         }
-
         &:nth-child(4) {
           list-style-type: '\1F34C';
         }
-
         &:nth-child(5) {
           list-style-type: '\1F353';
         }
-
         &:nth-child(6) {
           list-style-type: '\1F34A';
         }
-
         &:nth-child(7) {
           list-style-type: '\1F352';
-        }
+        } */
+        /* alternative way to apply the list-style-type: decimal
+        1) adds list-style-type: none;
+        2) adds emojis in the HTML file
+        */
+        list-style-type: none;
       }
     }
   }
