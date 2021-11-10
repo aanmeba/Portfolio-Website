@@ -50,7 +50,14 @@ figure,
     padding-left: 1rem;
     li {
       padding-left: 0.5rem;
-      list-style-type: none;
+
+      &:nth-child(n) {
+        list-style-type: '🌱';
+      }
+
+      &:nth-child(n + 3) {
+        list-style-type: '🍎';
+      }
     }
   }
 }
