@@ -81,7 +81,7 @@ figure figcaption,
 }
 
 .post-main ul li:nth-child(n) {
-  list-style-type: '\1F33F';
+  list-style-type: square;
 }
 
 .post-main ul li:nth-child(n + 3) {
