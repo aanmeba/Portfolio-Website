@@ -1095,13 +1095,6 @@ figure figcaption,
 
 .post-main ul li {
   padding-left: 0.5rem;
-}
-
-.post-main ul li:nth-child(n) {
-  list-style-type: square;
-}
-
-.post-main ul li:nth-child(n + 3) {
   list-style-type: '\1F331';
 }
 
