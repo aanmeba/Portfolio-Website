@@ -45,6 +45,21 @@ figure,
     font-size: 1rem;
     @include blogText;
   }
+
+  ul {
+    padding-left: 1rem;
+    li {
+      padding-left: 0.5rem;
+
+      &:nth-child(n) {
+        list-style-type: '\1F33F';
+      }
+
+      &:nth-child(n + 3) {
+        list-style-type: '\1F331';
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 601px) {
