@@ -4,7 +4,8 @@ This is my portfolio website **only** using `HTML` and `CSS`. Some of the conten
 
 ## Link
 
-Check out the website [here](https://jungah.netlify.app/)
+- Check out the website [here](https://jungah.netlify.app/)
+- [Slideshow for presentation](https://www.canva.com/design/DAEvfMedIKc/97JJqBHgXkhcd7xUR-lQcg/view?utm_content=DAEvfMedIKc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Design Reference
 
